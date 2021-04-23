@@ -1,0 +1,14 @@
+<div class="group-card" *ngIf="group">
+
+    <div class="group">
+        <h2>NOMBRE: {{group.name}}</h2>
+        <p>Descripcion: {{group.description}}</p>
+        <p>URL: {{group.url}}</p>
+        <p>Responsable: {{group.responsable}}</p>
+    </div>
+
+    <div class="center">
+        <button (click)="updateGroup(groups.name)" class="button"> EDITAR </button>
+    </div>
+
+</div>

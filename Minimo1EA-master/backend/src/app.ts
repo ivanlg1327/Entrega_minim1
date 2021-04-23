@@ -5,7 +5,7 @@ import morgan from 'morgan';
 import bodyParser from'body-parser';
 
 //Importamos fichero de rutas
-import institutionRoutes from './routes/institution.routes'
+import groupRoutes from './routes/invesgroup.routes'
 
 //Inicializamos express
 const app = express();
@@ -22,7 +22,7 @@ app.use(express.json());
 app.use(bodyParser.json());
 
 //Llama a las rutas de la API
-app.use('/institution', institutionRoutes);
+app.use('/group', groupRoutes);
 
 //Exportamos fichero como 'app'
 export default app;

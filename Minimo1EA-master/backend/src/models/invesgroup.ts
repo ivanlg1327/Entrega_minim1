@@ -2,7 +2,7 @@
 import mongoose, { Schema, Document} from 'mongoose';
 
 //Modelo de objeto que se guarda en la BBDD de MongoDB
-const institutionSchema = new Schema({
+const groupSchema = new Schema({
     name: {
         type: String,
         unique: true
@@ -19,7 +19,7 @@ const institutionSchema = new Schema({
 });
 
 //Interfaz para tratar respuesta como documento
-export interface iInstitution extends Document {
+export interface invesGroup extends Document {
     name: string;
     description: string;
     url: string;
@@ -27,4 +27,4 @@ export interface iInstitution extends Document {
 }
 
 //Exportamos modelo para poder usarlo
-export default mongoose.model<iInstitution>('Institution', institutionSchema);
+export default mongoose.model<invesGroup>('Group', groupSchema);

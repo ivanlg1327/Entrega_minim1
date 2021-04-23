@@ -9,16 +9,16 @@ import { HttpClientModule } from '@angular/common/http';
 
 //Reactive Form
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { InstitutionComponent } from './institution/institution.component';
-import { InstitutionCardComponent } from './institution-card/institution-card.component';
-import { InstitutionFormComponent } from './institution-form/institution-form.component';
+import { GroupComponent } from './invesgroup/invesgroup.component';
+import { GroupCardComponent } from './group-card/group-card.component';
+import { GroupFormComponent } from './invesgroup-form/invesgroup-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InstitutionComponent,
-    InstitutionCardComponent,
-    InstitutionFormComponent
+    GroupComponent,
+    GroupCardComponent,
+    GroupFormComponent
   ],
   imports: [
     BrowserModule,

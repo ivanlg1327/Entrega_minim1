@@ -1,6 +1,6 @@
     
     <div class="text">
-        <h1>INSTITUCIONES</h1>
+        <h1>GRUPOS DE INVESTIGACIÓN</h1>
     </div>
   
   <!-- <div class="center">
@@ -8,10 +8,10 @@
     <button (click)="admin()" class="button"> Back </button>
   </div> -->
   
-  <div class="institutions">
+  <div class="groups">
       <!-- SELECTOR DE COURSE-CARD.COMPONENT.TS -->
-      <app-institution-card *ngFor="let institution of institutions; index as i"
-        [institution]="institution" [index]="i">
+      <app-institution-card *ngFor="let group of groups; index as i"
+        [group]="groups" [index]="i">
       </app-institution-card>  
   </div>
   

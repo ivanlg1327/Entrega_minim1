@@ -1,6 +1,6 @@
 <div class="login">
-    <h2 class="login-header">Update institution</h2>
-    <form [formGroup]="institutionForm" class="login-container" (ngSubmit)="update()">
+    <h2 class="login-header">Update investigation group</h2>
+    <form [formGroup]="groupForm" class="login-container" (ngSubmit)="update()">
       <input type="name" placeholder="Name*" formControlName="name" />
       <ng-container
         *ngIf="!formControls.name.valid &&formControls.name.touched"
@@ -24,7 +24,7 @@
       </ng-container>
   
       <p>
-        <input type="submit" value="Submit" [disabled]="institutionForm.invalid" />
+        <input type="submit" value="Submit" [disabled]="groupForm.invalid" />
       </p>
     </form>
   </div>
