@@ -1,0 +1,17 @@
+    
+    <div class="text">
+        <h1>INSTITUCIONES</h1>
+    </div>
+  
+  <!-- <div class="center">
+    <button (click)="addSubject()" class="button" >Add new subject</button>
+    <button (click)="admin()" class="button"> Back </button>
+  </div> -->
+  
+  <div class="institutions">
+      <!-- SELECTOR DE COURSE-CARD.COMPONENT.TS -->
+      <app-institution-card *ngFor="let institution of institutions; index as i"
+        [institution]="institution" [index]="i">
+      </app-institution-card>  
+  </div>
+  

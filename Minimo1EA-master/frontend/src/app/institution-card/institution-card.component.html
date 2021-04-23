@@ -1,0 +1,14 @@
+<div class="institution-card" *ngIf="institution">
+
+    <div class="institution">
+        <h2>NOMBRE: {{institution.name}}</h2>
+        <p>Descripcion: {{institution.description}}</p>
+        <p>URL: {{institution.url}}</p>
+        <p>Responsable: {{institution.responsable}}</p>
+    </div>
+
+    <div class="center">
+        <button (click)="updateInstitution(institution.name)" class="button"> EDITAR </button>
+    </div>
+
+</div>

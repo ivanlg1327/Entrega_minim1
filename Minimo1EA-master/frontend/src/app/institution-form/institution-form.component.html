@@ -1,0 +1,31 @@
+<div class="login">
+    <h2 class="login-header">Update institution</h2>
+    <form [formGroup]="institutionForm" class="login-container" (ngSubmit)="update()">
+      <input type="name" placeholder="Name*" formControlName="name" />
+      <ng-container
+        *ngIf="!formControls.name.valid &&formControls.name.touched"
+      >
+        <p *ngIf="formControls.name.errors.required">
+          Name is required
+        </p>
+      </ng-container>
+  
+      <input type="description" placeholder="Description" formControlName="description" />
+  
+      <input type="url" placeholder="URL" formControlName="url" />
+  
+      <input type="responsable" placeholder="Responsable*" formControlName="responsable" />
+      <ng-container
+        *ngIf="!formControls.responsable.valid &&formControls.responsable.touched"
+      >
+        <p *ngIf="formControls.name.errors.required">
+          Responsable is required
+        </p>
+      </ng-container>
+  
+      <p>
+        <input type="submit" value="Submit" [disabled]="institutionForm.invalid" />
+      </p>
+    </form>
+  </div>
+  
