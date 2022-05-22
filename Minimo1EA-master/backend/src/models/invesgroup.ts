@@ -19,7 +19,7 @@ const groupSchema = new Schema({
 });
 
 //Interfaz para tratar respuesta como documento
-export interface invesGroup extends Document {
+export interface Group extends Document {
     name: string;
     description: string;
     url: string;
@@ -27,4 +27,4 @@ export interface invesGroup extends Document {
 }
 
 //Exportamos modelo para poder usarlo
-export default mongoose.model<invesGroup>('Group', groupSchema);
+export default mongoose.model<Group>('Group', groupSchema);

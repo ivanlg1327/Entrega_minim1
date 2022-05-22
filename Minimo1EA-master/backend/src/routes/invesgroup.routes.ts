@@ -7,6 +7,7 @@ const router = Router();
 router.get('/all', groupController.getGroups);
 router.get('/:name', groupController.getGroup);
 router.post('/update/:name',groupController.updateGroup);
+router.post('/new',groupController.newGroup);
 
 //Exportamos router para usar rutas en app.ts
 export default router;
